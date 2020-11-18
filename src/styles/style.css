@@ -1,0 +1,705 @@
+/*HEADER STYLING STARTS HERE*/
+/*HEADER STYLING ENDS HERE*/
+/*nav section*/
+/*nav section*/
+
+/*STANDARD STYLING STARTS HERE*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    line-height: 1.6em;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.icon-pr {
+    padding-right: 8px;
+}
+
+.btn {
+    background-color: transparent;
+    outline: none;
+}
+
+/*STANDARD STYLING ENDS HERE*/
+
+
+/*HEADER STYLING STARTS HERE*/
+/*mobile nav section*/
+#desktop-nav {
+    display: none;
+}
+
+#mobile-nav {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--git-black);
+    padding: 16px;
+
+}
+
+#mobile-nav .main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#mobile-nav .toggle-menu-open:hover {
+    cursor: pointer;
+}
+
+#mobile-nav .github-logo a,
+#mobile-nav .notification-icon a {
+    color: var(--white);
+}
+
+#mobile-nav .github-logo a:hover,
+#mobile-nav .notification-icon a:hover {
+    color: var(--text-white-hover);
+    transition: var(--trans);
+}
+
+#mobile-nav .github-logo i {
+    font-size: 2.1rem;
+}
+
+#mobile-nav .notification-icon i {
+    font-size: 17px;
+}
+
+.show {
+    display: block;
+    transition: var(--trans);
+}
+
+.hide {
+    display: none;
+    transition: var(--trans);
+}
+
+#mobile-nav-items form input {
+    background-color: var(--git-black);
+    outline: none;
+    border: 1px solid var(--mob-nav-white);
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    margin: 15px 0;
+    color: var(--text-white-hover);
+}
+
+#mobile-nav-items ::placeholder {
+    color: var(--mob-nav-white)
+}
+
+#mobile-nav-items li {
+    border-top: 0.4px solid var(--mob-nav-white);
+    margin-bottom: 8px;
+    padding-bottom: 5px;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+#mobile-nav-items li a {
+    color: var(--white);
+    font-weight: 600;
+}
+
+
+/*mobile nav section*/
+/*HEADER STYLING ENDS HERE*/
+
+/*CONTENT STYLING STARTS HERE*/
+/*profile section*/
+#github-profile-info .profile-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#github-profile-info img {
+    border-radius: 50%;
+    width: 19%;
+    height: 19%;
+    margin-right: 20px;
+    box-shadow: 0 0 0 1px var(--color-avatar-border);
+}
+
+.user-profile-text {
+    padding-left: 8px;
+}
+
+.user-profile-text p,
+.user-profile-text h2 {
+    margin: 0;
+}
+
+.profile-info {
+    color: var(--text-primary);
+}
+
+.profile-info .name {
+    color: rgb(36, 41, 46);
+}
+
+.profile-info .nickname {
+    font-size: 18px;
+    color: rgb(88, 96, 105);
+}
+
+.desktop-status-btn {
+    display: none;
+}
+
+#status-btn {
+    border: 1px solid var(--border-primary);
+    width: 100%;
+    text-align: left;
+    padding: 8px;
+    border-radius: 5px;
+    color: var(--text-grey);
+}
+
+#status-btn:hover {
+    cursor: pointer;
+}
+
+.user-info-bio .bio {
+    color: rgb(36, 41, 46);
+    /* width: ; */
+}
+
+#edit-profile {
+    border: 1px solid var(--border-primary);
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    color: rgb(36, 41, 46);
+    margin-bottom: 20px;
+    box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px 0px inset;
+}
+
+#edit-profile:hover {
+    cursor: pointer;
+}
+
+.user-social-info {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    margin-bottom: 50px;
+}
+
+.user-social-info i {
+    color: rgb(106, 115, 125);
+}
+
+#social-media,
+#address {
+    display: none;
+}
+
+.user-social-info .user-follow-count {
+    order: 1;
+    display: flex;
+}
+
+.user-social-info a:visited {
+    color: rgb(36, 41, 46);
+}
+
+.user-social-info a:hover {
+    text-decoration: underline;
+    color: rgb(3, 102, 214);
+}
+
+.user-social-info .user-follow-count li {
+    padding-right: 10px;
+}
+
+.user-social-details a {
+    color: rgb(36, 41, 46);
+}
+
+/* .user-social-info .user-follow-count li a:hover {
+    color: rgb(3, 102, 214);
+} */
+
+.highlights {
+    display: none;
+}
+
+/*profile section*/
+
+/*repo-search section*/
+#repo-search {
+    width: 100%;
+    padding: 8px 24px;
+    outline: none;
+    border: 1px solid var(--border-tertiary);
+    border-radius: 6px;
+    color: rgb(36, 41, 46);
+}
+
+/*repo-search section*/
+
+/*sub-menu section*/
+#repo-menu {
+    display: flex;
+    overflow: auto;
+    white-space: nowrap;
+    border-bottom: 1px solid var(--border-tertiary);
+}
+
+#repo-menu li {
+    padding: 8px 16px;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+#repo-menu a {
+    color: rgb(36, 41, 46);
+}
+
+#repo-menu a:hover {
+    text-decoration: none;
+}
+
+#repo-menu a:visited {
+    color: rgb(36, 41, 46);
+}
+
+.active-sub-menu {
+    border-bottom: 2px solid var(--nav-underscore);
+    font-weight: 600;
+}
+
+#repo-menu li:hover {
+    border-bottom: 2px solid rgba(209, 213, 218, 0.5);
+}
+
+.sub-menu-icon {
+    visibility: hidden;
+}
+
+#repo-menu .repo-count {
+    background-color: rgba(209, 213, 218, 0.5);
+    padding: 3px;
+    border-radius: 7px;
+    font-size: 13px;
+}
+
+#repo-menu .repo-menu-icon {
+    display: none;
+}
+
+/*sub-menu section*/
+
+/*repo-listing section*/
+#repo-listing .repo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #e1e4e8;
+    margin: 20px 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 50%;
+}
+
+#repo-listing .repo-item .repo-title a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}
+
+
+.left-section {
+    width: 75%;
+}
+
+.left-section-text .repo-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(3, 102, 214);
+}
+
+.left-section-text .repo-title a:visited {
+    color: rgb(3, 102, 214);
+}
+
+.left-section-text .repo-desc {
+    font-size: 14px;
+    color: rgb(88, 96, 105);
+    width: 75%;
+}
+
+.left-section .repo-info {
+    font-size: 12px;
+    display: flex;
+}
+
+.repo-info li {
+    padding-right: 10px;
+    color: rgb(88, 96, 105);
+}
+
+.repo-info .repo-lang {
+    font-size: 12px;
+}
+
+#repo-color {
+    display: inline-block;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin-right: 3px;
+}
+
+#add-star {
+    /* display: none; */
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: 1px solid rgba(27, 31, 35, 0.15);
+    background-color: rgb(243, 244, 246);
+    text-transform: capitalize;
+    color: rgb(36, 41, 46);
+    cursor: pointer;
+    box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px 0px inset;
+}
+
+/*repo-listing section*/
+/*CONTENT STYLING ENDS HERE*/
+
+/*MEDIA QUERIES STARTS HERE*/
+/* from ipad upwards */
+
+@media screen and (min-width: 700px) {
+
+    /*desktop-nav section*/
+    #mobile-nav {
+        display: none;
+    }
+
+    #desktop-nav {
+        display: flex;
+        background-color: var(--git-black);
+        padding: 16px 32px;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    #desktop-nav a:hover {
+        text-decoration: none;
+    }
+
+    #desktop-nav .desktop-menu-items a {
+        color: var(--white);
+    }
+
+    #sub-icons {
+        color: var(--white);
+    }
+
+    #desktop-nav .left {
+        display: flex;
+        align-items: center;
+    }
+
+    #desktop-nav .logo i {
+        font-size: 36px;
+        margin-right: 15px;
+        color: var(--white);
+    }
+
+    .search-bar #search-input {
+        width: 100%;
+        padding: 3px 24px;
+        background-color: var(--git-black);
+        outline: none;
+        border: 1px solid var(--mob-nav-white);
+        border-radius: 6px;
+        color: var(--text-white-hover);
+    }
+
+    .desktop-menu-items ul {
+        display: flex;
+        text-transform: capitalize;
+    }
+
+    .desktop-menu-items ul li {
+        margin: 0 12px;
+    }
+
+    #desktop-nav .right {
+        margin-left: auto;
+    }
+
+    #desktop-nav .right ul {
+        display: flex;
+    }
+
+    #desktop-nav .right ul li {
+        margin: 0 8px;
+    }
+
+    #plus-icon-menu {
+        position: relative;
+
+    }
+
+    #plus-icon-menu:hover {
+        cursor: pointer;
+    }
+
+    .visible {
+        visibility: visible;
+    }
+
+    .not-visible {
+        visibility: hidden;
+    }
+
+    .main-sub-menu {
+        position: absolute;
+        top: 3em;
+        left: -8em;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 6px;
+        font-size: 12px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px 0px;
+    }
+
+    .main-sub-menu::before {
+        content:'\25b2';
+        position: absolute;
+        top: -0.9em;
+        right: 15px;
+        color: white;
+        font-size: 18px;
+    }
+
+    .main-sub-menu li {
+        width: 100%;
+        padding: 4px;
+    }
+
+    .main-sub-menu li a {
+        color: rgb(36, 41, 46);
+        display: block;
+        padding: 0 10px;
+    }
+
+    .main-sub-menu li a:hover {
+        background: rgb(3, 102, 214);
+        color: white;
+    }
+
+    /*desktop-nav section*/
+
+
+    /*site-content section*/
+    .site-content {
+        display: flex;
+        margin: 40px;
+    }
+
+    /*profile section*/
+
+    .site-content #github-profile-info {
+        flex: 1;
+        padding: 0 20px;
+    }
+
+    #github-profile-info .profile-info {
+        display: block;
+    }
+
+    #github-profile-info img {
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 0 0 1px var(--color-avatar-border);
+    }
+
+    .profile-info {
+        position: relative;
+    }
+
+    .user-profile-text {
+        padding: 0;
+    }
+
+    #social-media,
+    #address {
+        display: block;
+    }
+
+    #status-btn {
+        display: none;
+    }
+
+    .desktop-status-btn {
+        display: block;
+        position: absolute;
+        top: 11.5rem;
+        left: 13.6rem;
+        padding: 8px;
+        background-color: white;
+        color: rgb(36, 41, 46);
+        box-shadow: rgba(149, 157, 165, 0.15) 0px 3px 6px 0px;
+        font-size: 14px;
+        border: 1px solid var(--border-primary);
+        height: auto;
+        width: auto;
+        border-radius: 50%;
+    }
+
+    .desktop-status-btn:hover {
+        cursor: pointer;
+    }
+
+    /*profile section*/
+
+    /*repo section*/
+    .site-content #repo {
+        flex: 3;
+        padding: 0 20px;
+    }
+
+    .sub-menu-icon {
+        visibility: visible;
+        color: rgb(36, 41, 46);
+        font-size: 22px;
+    }
+
+    /*repo section*/
+    /*site-content section*/
+}
+
+/*MEDIA QUERIES ENDS HERE*/
+
+/* Specials */
+
+/*COLORS*/
+:root {
+    --git-black: #24292E;
+    --nav-underscore: #F9826C;
+    --border-primary: #e1e4e8;
+    --border-tertiary: #d1d5da;
+    --white: #ffffff;
+    --trans: all ease-in 0.3s;
+    --text-white-hover: hsla(0, 0%, 100%, 0.7);
+    --text-primary: #586069;
+    --text-grey: #747577;
+    --mob-nav-white: hsla(0, 0%, 100%, 0.308);
+}
+/*COLORS*/
+
+
+
+/*LAYOUT*/
+/* horizontal padding */
+.p-x-3 {
+    padding: 0 1rem;
+}
+
+.p-x-2 {
+    padding: 0 0.6rem;
+}
+
+.p-x-1 {
+    padding: 0 0.3rem;
+}
+
+/* vertical padding */
+.p-y-3 {
+    padding: 1rem 0;
+}
+
+.p-y-2 {
+    padding: 0.6rem 0;
+}
+
+.p-y-1 {
+    padding: 0.3rem 0;
+}
+
+/* MARGIN */
+/* horizontal margin */
+.m-x-3 {
+    margin: 0 1rem;
+}
+
+.m-x-2 {
+    margin: 0 0.6rem;
+}
+
+.m-x-1 {
+    margin: 0 0.3rem;
+}
+
+
+/* vertical margin */
+.m-y-3 {
+    margin: 1rem 0;
+}
+
+.m-y-2 {
+    margin: 0.6rem 0;
+}
+
+.m-y-1 {
+    margin: 0.3rem 0;
+}
+
+/* DISPLAY */
+
+.di-none {
+    display: none;
+}
+
+.di-block {
+    display: block;
+}
+
+
+/* COLUMN */
+.col-75{
+    width: 75%;
+}
+
+.col-50{
+    width: 50%;
+}
+
+.col-25{
+    width: 25%;
+}
+
+/*TEXT COLORS*/
+.tx-white {
+    color: white;
+}
+/*LAYOUT*/
