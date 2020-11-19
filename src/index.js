@@ -19,7 +19,7 @@ function toggleMenu(){
 }
 
 /* GRAPHQL STARTS HERE */
-const token = process.env.TOKEN;
+const token = process.env.NODE_ENV_TOKEN;
 
 const baseUrl = "https://api.github.com/graphql"
 const body = {
