@@ -1,4 +1,0 @@
-[build]
-
-[context.branch-deploy.environment]
-  NODE_ENV = "8ceeaf87bf007f191c392f7eb4a905d86b45e12f"
