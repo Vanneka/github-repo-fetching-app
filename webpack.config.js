@@ -55,7 +55,7 @@ module.exports = {
             filename: './index.html'
         }),
         new webpack.DefinePlugin({
-            "process.env.TOKEN": JSON.stringify(process.env.TOKEN)
+            "process.env": JSON.stringify(dotenv.parsed)
         })
     ]
 }
