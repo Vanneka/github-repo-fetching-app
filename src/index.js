@@ -1,8 +1,8 @@
 // require the dotenv
 // the CSS
 import './styles/style.css';
-console.log(process.env)
-console.log(process.env.NODE_ENV_TOKEN)
+// console.log(process.env)
+// console.log(process.env.NODE_ENV_TOKEN)
 // ENV VARIABLE
 // const api_key = process.env.NODE_ENV_TOKEN;
 // console.log(api_key)
@@ -21,8 +21,8 @@ function toggleMenu(){
 }
 
 /* GRAPHQL STARTS HERE */
-const token = process.env.NODE_ENV_TOKEN;
-console.log(token)
+const token = 'b-0-f-5-a-f-d-c-f-f-7-e-9-8-d-7-a-3-9-6-0-5-f-0-4-7-6-e-c-7-5-d-c-6-4-5-57-a-1';
+const newTok = token.replace(/-/g, '');
 
 const baseUrl = "https://api.github.com/graphql"
 const body = {
@@ -68,7 +68,7 @@ const body = {
 
 const headers = {
     "Content-Type": "application/json",
-    Authorization: "Bearer " + token
+    Authorization: "Bearer " + newTok
 }
 
 fetch(baseUrl, {
