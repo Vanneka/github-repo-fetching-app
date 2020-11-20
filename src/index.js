@@ -1,5 +1,5 @@
 // require the dotenv
-// import dotenv from 'dotenv';
+import dotenv from 'dotenv';
 dotenv.config()
 // the CSS
 import './styles/style.css';
