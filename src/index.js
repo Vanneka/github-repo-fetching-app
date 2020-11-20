@@ -1,6 +1,4 @@
 // require the dotenv
-import dotenv from 'dotenv';
-dotenv.config()
 // the CSS
 import './styles/style.css';
 
@@ -23,6 +21,7 @@ function toggleMenu(){
 
 /* GRAPHQL STARTS HERE */
 const token = process.env.NODE_ENV_TOKEN;
+console.log(token)
 
 const baseUrl = "https://api.github.com/graphql"
 const body = {
