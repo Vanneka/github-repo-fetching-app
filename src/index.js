@@ -1,7 +1,8 @@
 // require the dotenv
 // the CSS
 import './styles/style.css';
-
+console.log(process.env)
+console.log(process.env.NODE_ENV_TOKEN)
 // ENV VARIABLE
 // const api_key = process.env.NODE_ENV_TOKEN;
 // console.log(api_key)
