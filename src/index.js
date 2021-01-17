@@ -186,8 +186,7 @@ function showRepos(datas){
 
                         <ul class="repo-info">
                             <li class="repo-lang">
-                                <div id="repo-color" style="background:${data.node.languages.nodes[0].color};">
-                                </div> ${data.node.languages.nodes[0].name}
+                                
                             </li>
                             <li class="repo-forked">
                             <i class="fa 
